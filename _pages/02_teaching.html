@@ -1,0 +1,40 @@
+---
+layout: page
+navtitle: Teaching
+permalink: /teaching/
+---
+
+<link rel="stylesheet" href="../css/main.css">
+
+<p>Here is a list of my previous courses taught, organized by institution.</p>
+
+<h3 class="mt-4">Swarthmore College</h3>
+{% assign courses = site.courses | where:"institution","Swarthmore College" | sort:"timecode" | reverse %}
+{% for c in courses %}
+{{ c.semester }} | {{ c.number }} | {{ c.title }}
+<br>
+{% endfor %}
+<br>
+
+<h3 class="mt-4">Colby College</h3>
+{% assign courses = site.courses | where:"institution","Colby College" | sort:"timecode" | reverse %}
+{% for c in courses %}
+{{ c.semester }} | {{ c.number }} | {{ c.title }}
+<br>
+{% endfor %}
+<br>
+
+<h3 class="mt-4">Grinnell College</h3>
+{% assign courses = site.courses | where:"institution","Grinnell College" | sort:"timecode" | reverse %}
+{% for c in courses %}
+{{ c.semester }} | {{ c.number }} | {{ c.title }}
+<br>
+{% endfor %}
+<br>
+
+<h3 class="mt-4">UC Santa Barbara</h3>
+{% assign courses = site.courses | where:"institution","UC Santa Barbara" | sort:"timecode" | reverse %}
+{% for c in courses %}
+{{ c.semester }} | {{ c.number }} | {{ c.title }}
+<br>
+{% endfor %}

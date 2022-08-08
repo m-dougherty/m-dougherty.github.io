@@ -1,0 +1,193 @@
+---
+
+---
+
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$brand-color:      violet;
+
+$table-text-align: left !default;
+
+$background-color: #404150;
+$text-color: #bbbbbb;
+$grey-color: #777777;
+$grey-color-light: #777777;
+$grey-color-dark:  #eeeeee;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting"
+;
+
+/* add additional CSS rules below */
+
+.site-header {border: none;}
+
+.site-title {
+  font-size: 40px;
+  height: 25px;
+  float: none;
+  padding-top: 20px;
+  font-family: Futura, sans-serif;
+  color: red;
+}
+
+.site-subtitle {
+  margin-bottom: 0;
+  float: none;
+  font-family: Futura, sans-serif;
+  letter-spacing: 0px;
+}
+
+.site-nav {
+  display: block;
+  text-align: center;
+  float: none;
+  font-family: Futura, sans-serif;
+  letter-spacing: 2px;
+}
+
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  &:visited {
+    color: $brand-color;
+  }
+
+  &:hover {
+    color: $brand-color;
+    text-decoration: none;
+  }
+}
+
+.page-link, .page-link-active {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-radius: 10px;
+  line-height: 28px;
+}
+
+a.page-link {
+  display: inline-block;
+  float: none;
+
+  color: black;
+  text-decoration: none;
+}
+
+a.page-link-active {
+  display: inline-block;
+  float: none;
+
+  color: black;
+  text-decoration: none;
+
+  background-color: violet;
+}
+
+.mt-4 {
+  border-bottom: 2px #e1e4e8 solid;
+}
+
+h3 {
+  color: $grey-color-dark;
+}
+
+.pubitem {
+  margin: 2em 0;
+  line-height: 1em;
+}
+
+.pubtitle {
+  margin-bottom: 0.5em;
+  line-height: 1em;
+}
+
+.pubauthors, .pubinfo {
+  font-size: 100%;
+  margin-left: 3em;
+  margin-bottom: .5em;
+}
+
+.pubimg {
+  float: left;
+  width: 200px;
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.pubteaser {
+  clear: both;
+}
+
+.pubteaser a {
+  float: left;
+  margin-right: 2em;
+}
+
+.pubteaser img {
+  width: 100px;
+  border: 1px solid black;
+}
+
+.publinks {
+  font-size: 100%;
+}
+
+.publication-authors {
+  margin: 0.5rem 0;
+}
+
+.publication-info {
+  margin: 0.5rem 0;
+}
+
+.publication-teaser {
+  margin: 2em;
+}
+
+.publication-teaser img {
+  border: none;
+}

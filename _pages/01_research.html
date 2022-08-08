@@ -1,0 +1,38 @@
+---
+layout: page
+navtitle: Research
+permalink: /research/
+---
+
+<link rel="stylesheet" href="../css/main.css">
+
+<p>My research interests lie primarily in geometric group theory,
+combinatorics, and topology, with a particular interest in the braid group and
+its relatives. Some of my recent work has focused on the geometric and
+combinatorial connections between braids, complex polynomials, and noncrossing
+partitions. My other interests include Coxeter groups, Artin groups, mapping
+class groups, and configuration spaces.<p>
+
+<h3 class="mt-4">Publications and Preprints</h3>
+{% assign publications = site.publications | where:"inprep","no" | sort: "year" | reverse %}
+{% for pub in publications %}
+<!-- <img class="pubimg" src="{{ site.baseurl }}/assets/img/{{ pub.img }}"> -->
+<div class="pubitem">
+  <div class="pubtitle">{{ forloop.rindex }}. &nbsp <a href="{{ pub.doi }}">{{ pub.title }}</a></div>
+  {% if pub.coauthors != "" %}
+    <div class="pubauthors">(with {{ pub.coauthors }})</div>
+  {% endif %}
+  <div class="pubinfo"> <i>{{ pub.publication }}</i>, {{ pub.year}}</div>
+</div>
+{% endfor %}
+
+<h3 class="mt-4">In Preparation</h3>
+{% assign publications = site.publications | where:"inprep","yes" %}
+{% for pub in publications %}
+<div class="pubitem">
+  <div class="pubtitle"> &bull; &nbsp; {{ pub.title }}</div>
+  {% if pub.coauthors != "" %}
+    <div class="pubauthors">(with {{ pub.coauthors }})</div>
+  {% endif %}
+</div>
+{% endfor %}
