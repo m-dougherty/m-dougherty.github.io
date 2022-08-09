@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
+permalink: /
 ---
 
 <link rel="stylesheet" href="{{ site.url }}/css/main.css">
