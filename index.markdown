@@ -6,7 +6,7 @@ layout: default
 permalink: /
 ---
 
-<link rel="stylesheet" href="{{ site.url }}/css/main.css">
+<link rel="stylesheet" href="/css/main.css">
 
 <div class="portrait-wrapper">
   <img src="michael.jpg" id="portrait">
