@@ -38,7 +38,7 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'navtitle' | join: '' | size -%}
       <center>
-        <a class="site-title" rel="author" href="{{ site.url }}/index.html">{{ site.title | escape }}</a> <br>
+        <a class="site-title" rel="author" href="{{ site.url }}">{{ site.title | escape }}</a> <br>
         <div class="site-subtitle">{{ site.pronouns | escape }} | {{ site.email }}</div>
 
         {%- if titles_size > 0 -%}
