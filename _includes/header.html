@@ -38,20 +38,20 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'navtitle' | join: '' | size -%}
       <center>
-        <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> <br>
+        <a class="site-title" rel="author" href="{{ site.url }}/index.html">{{ site.title | escape }}</a> <br>
         <div class="site-subtitle">{{ site.pronouns | escape }} | {{ site.email }}</div>
 
         {%- if titles_size > 0 -%}
           <nav class="site-nav">
             <div class="trigger">
-              <a class="page-link" href="{{ site.baseurl }}/dougherty-cv.pdf">cv</a>
+              <a class="page-link" href="{{ site.url }}/dougherty-cv.pdf">cv</a>
               {%- for path in page_paths -%}
                 {%- assign my_page = site.pages | where: "path", path | first -%}
                 {%- if my_page.navtitle -%}
                   {%- if my_page.url == page.url -%}
-                    <a class="page-link-active" href="{{ my_page.url | relative_url }}">{{ my_page.navtitle | escape | downcase }}</a>
+                    <a class="page-link-active" href="{{ site.url }}{{ my_page.url | relative_url }}">{{ my_page.navtitle | escape | downcase }}</a>
                   {%- else -%}
-                    <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.navtitle | escape | downcase }}</a>
+                    <a class="page-link" href="{{ site.url }}{{ my_page.url | relative_url }}">{{ my_page.navtitle | escape | downcase }}</a>
                   {%- endif -%}
                 {%- endif -%}
               {%- endfor -%}

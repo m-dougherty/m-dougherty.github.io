@@ -5,7 +5,7 @@
 layout: default
 ---
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="{{ site.url }}/css/main.css">
 
 ![image](michael.jpg){: width="220px" style="float: right; padding-left: 25px"}
 
