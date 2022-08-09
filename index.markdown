@@ -8,7 +8,9 @@ permalink: /
 
 <link rel="stylesheet" href="{{ site.url }}/css/main.css">
 
-![image](michael.jpg){: id="portrait"}
+<div class="portrait-wrapper">
+  <img src="michael.jpg" id="portrait">
+</div>
 
 I am an Assistant Professor in the Department of Mathematics
 at Lafayette College in Easton, PA.
