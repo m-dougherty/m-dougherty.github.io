@@ -8,7 +8,7 @@ permalink: /
 
 <link rel="stylesheet" href="{{ site.url }}/css/main.css">
 
-![image](michael.jpg){: width="220px" style="float: right; padding-left: 25px"}
+![image](michael.jpg){: id="portrait"}
 
 I am an Assistant Professor in the Department of Mathematics
 at Lafayette College in Easton, PA.
