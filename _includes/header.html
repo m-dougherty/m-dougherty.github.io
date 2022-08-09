@@ -45,14 +45,14 @@
           <nav class="site-nav">
             <!-- <div class="trigger"> -->
               <ul>
-                <li><a class="page-link" href="{{ site.url }}/dougherty-cv.pdf">cv</a></li>
+                <li><a class="page-link-inactive" href="{{ site.url }}/dougherty-cv.pdf">cv</a></li>
                 {%- for path in page_paths -%}
                   {%- assign my_page = site.pages | where: "path", path | first -%}
                   {%- if my_page.navtitle -%}
                   {%- if my_page.url == page.url -%}
                     <li><a class="page-link-active" href="{{ site.url }}{{ my_page.url | relative_url }}">{{ my_page.navtitle | escape | downcase }}</a></li>
                   {%- else -%}
-                    <li><a class="page-link" href="{{ site.url }}{{ my_page.url | relative_url }}">{{ my_page.navtitle | escape | downcase }}</a></li>
+                    <li><a class="page-link-inactive" href="{{ site.url }}{{ my_page.url | relative_url }}">{{ my_page.navtitle | escape | downcase }}</a></li>
                   {%- endif -%}
                 {%- endif -%}
               {%- endfor -%}
