@@ -108,8 +108,6 @@ nav li {
   text-align: center
 }
 
-
-
 a {
   color: $brand-color;
   text-decoration: none;
@@ -147,11 +145,11 @@ a.page-link-active {
   background-color: violet;
 }
 
-.mt-4 {
+h3 {
   border-bottom: 2px #e1e4e8 solid;
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5, h6{
   color: $grey-color-dark;
 }
 

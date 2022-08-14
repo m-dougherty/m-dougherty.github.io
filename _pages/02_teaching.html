@@ -9,7 +9,7 @@ permalink: teaching/
 <!-- <p>Here is a list of the courses I have taught, organized by institution.</p> -->
 
 
-<h2> Current Courses </h2>
+<h3>Current Courses</h3>
   {% assign current_semester = site.current_semester %}
   {% assign current_courses = site.courses | where:"semester",current_semester | sort:"termletter" %}
   <ul>
@@ -24,10 +24,10 @@ permalink: teaching/
   </ul>
 
 
-<h2> Previous Courses </h2>
+<h3>Previous Courses</h3>
 {% for college in site.institutions %}
 
-  <h4 class="mt-4">{{ college }}</h4>
+  <h4>{{ college }}</h4>
   {% assign institution_courses = site.courses | where:"institution",college %}
   {% assign termcodes = institution_courses | map:"termcode" | uniq | sort | reverse %}
 
