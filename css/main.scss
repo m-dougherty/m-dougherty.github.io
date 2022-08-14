@@ -108,6 +108,8 @@ nav li {
   text-align: center
 }
 
+
+
 a {
   color: $brand-color;
   text-decoration: none;
@@ -124,7 +126,7 @@ a {
 
 .page-link-inactive, .page-link-active {
   display: inline-block;
-  text-align: center; 
+  text-align: center;
   margin-left: 12px;
   margin-right: 12px;
   padding-left: 5px;
@@ -149,7 +151,7 @@ a.page-link-active {
   border-bottom: 2px #e1e4e8 solid;
 }
 
-h3 {
+h2, h3, h4 {
   color: $grey-color-dark;
 }
 
@@ -161,12 +163,21 @@ h3 {
 .pubtitle {
   margin-bottom: 0.5em;
   line-height: 1em;
+  display: inline-block;
 }
 
 .pubauthors, .pubinfo {
   font-size: 100%;
-  margin-left: 3em;
-  margin-bottom: .5em;
+  margin-left: 1.5em;
+}
+
+.pubinfo {
+  margin-bottom: 0.75em;
+}
+
+#semesterinfo {
+  margin-bottom: 0.75em;
+  list-style-type: none;
 }
 
 .pubimg {
