@@ -4,12 +4,10 @@ navtitle: Teaching
 permalink: teaching/
 ---
 
-<link rel="stylesheet" href="../css/main.css">
-
 <!-- <p>Here is a list of the courses I have taught, organized by institution.</p> -->
 
 
-<h3>Current Courses</h3>
+<h2>Current Courses</h2>
   {% assign current_semester = site.current_semester %}
   {% assign current_courses = site.courses | where:"semester",current_semester | sort:"termletter" %}
   <ul>
@@ -17,14 +15,18 @@ permalink: teaching/
       {{ current_semester }}
       <ul>
         {% for course in current_courses %}
-          <li id="courseinfo">{{ course.number }} | {{ course.title }}</li>
+          <li id="courseinfo">
+            <a href="{{ course.url }}">
+              {{ course.number }} | {{ course.title }}
+            </a>
+          </li>
         {% endfor %}
       </ul>
     </li>
   </ul>
 
 
-<h3>Previous Courses</h3>
+<h2>Previous Courses</h2>
 {% for college in site.institutions %}
 
   <h4>{{ college }}</h4>
