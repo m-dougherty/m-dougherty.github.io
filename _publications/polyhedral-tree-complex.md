@@ -4,8 +4,8 @@ title: "The Polyhedral Tree Complex"
 authors: Michael Dougherty
 coauthors: ""
 inprep: "no"
-preprint: "yes"
+preprint: "no"
 publication: "Combinatorial Theory"
-year: "accepted"
+year: "2022"
 doi: "https://arxiv.org/abs/2201.11185"
 ---
