@@ -47,7 +47,7 @@ collections:
 
 # for categorizing course list
 institutions:
-  # - "Lafayette College"
+  - "Lafayette College"
   - "Swarthmore College"
   - "Colby College"
   - "Grinnell College"
