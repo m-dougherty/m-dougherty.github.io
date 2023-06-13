@@ -8,4 +8,5 @@ preprint: "no"
 publication: Electronic Journal of Combinatorics
 year: "2018"
 doi: http://dx.doi.org/10.37236/7212
+pdf: https://arxiv.org/pdf/1707.06620.pdf
 ---
