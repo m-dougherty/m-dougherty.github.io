@@ -8,5 +8,5 @@ preprint: "no"
 publication: Journal of Algebra
 year: "2022"
 doi: http://dx.doi.org/10.1016/j.jalgebra.2021.08.015
-pdf: "papers/geom-poly-1.pdf"
+pdf: "geom-poly-1.pdf"
 ---
