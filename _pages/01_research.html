@@ -19,7 +19,7 @@ class groups, and configuration spaces.<p>
 <ol reversed>
   {% for pub in publications %}
   <li>
-    <a href="{{ pub.doi }}">{{ pub.title }}</a> <br>
+    <a href="{{ pub.doi }}">[journal]</a> <a>[preprint]</a> {{ pub.title }} <br>
     {% if pub.coauthors != "" %}
       <div class="pubauthors">(with {{ pub.coauthors }})</div>
     {% endif %}
