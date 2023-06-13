@@ -23,7 +23,13 @@ class groups, and configuration spaces.<p>
     {% if pub.coauthors != "" %}
       <div class="pubauthors">(with {{ pub.coauthors }})</div>
     {% endif %}
-    <div class="pubinfo"> <i>{{ pub.publication }}</i>, {{ pub.year}}</div>
+    <div class="pubinfo"> 
+        {% if pub.preprint == "no" %}
+            <i>{{ pub.publication }}</i>, {{ pub.year }}
+        {% else %}
+            Preprint, {{ pub.year }}
+        {% endif %}
+    </div>
   </li>
   {% endfor %}
 </ol>
