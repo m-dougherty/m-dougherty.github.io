@@ -8,4 +8,5 @@ preprint: "no"
 publication: Proceedings of the American Mathematical Society
 year: "2020"
 doi: https://doi.org/10.1090/proc/15215
+pdf: "critical-det.pdf"
 ---
