@@ -1,11 +1,12 @@
 ---
 layout: default
-title: "Geometric Combinatorics of Polynomials II: The Branched Annulus Complex"
+title: "Geometric Combinatorics of Polynomials II: Polynomials and Cell Structures"
 authors: Michael Dougherty and Jon McCammond
 coauthors: "Jon McCammond"
-inprep: "yes"
-preprint: "no"
+inprep: "no"
+preprint: "yes"
 publication: ""
-year: ""
+year: "2024"
 doi: ""
+pdf: "gcp2-polynomials-and-cell-structures.pdf"
 ---
