@@ -14,8 +14,8 @@ partitions. My other interests include Coxeter groups, Artin groups, mapping
 class groups, and configuration spaces.<p>
 
 <h2>Publications and Preprints</h2>
-{% assign pubs = site.publications | sort:"preprint" | reverse %}
-{% assign publications = pubs | where:"inprep","no" | sort: "year" | reverse %}
+{% assign pubs = site.publications | where:"inprep","no" | sort: "preprint" | reverse %}
+{% assign publications = pubs | sort: "year" | reverse %}
 
 <ol reversed>
   {% for pub in publications %}
