@@ -1,44 +1,50 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.77">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-    span.s2 {text-decoration: underline ; font-kerning: none; color: #0000e9; -webkit-text-stroke: 0px #0000e9}
-    ol.ol1 {list-style-type: decimal}
-    ul.ul1 {list-style-type: disc}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1">--- layout: page navtitle: Research permalink: research/ ---</span></p>
-<p class="p2"><span class="s1">My research interests lie primarily in geometric group theory, combinatorics, and topology, with a particular interest in the braid group and its relatives. Some of my recent work has focused on the geometric and combinatorial connections between braids, complex polynomials, and noncrossing partitions. My other interests include Coxeter groups, Artin groups, mapping class groups, and configuration spaces.</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>Publications and Preprints</b></span></h2>
-<p class="p1"><span class="s1">{% assign publications = site.publications | group_by: “preprint” | reverse &amp;}</span></p>
-<p class="p1"><span class="s1">{% assign pubsorted = publications | where:"inprep","no" | sort: "year" | reverse %}</span></p>
-<p class="p1"><span class="s1">{% for pub in pubsorted %}</span></p>
-<ol class="ol1">
-  <li class="li1"><span class="s2"><a href="file:///Users/michael/Documents/m-dougherty.github.io/_pages/%7B%7B%20pub.pdf%20%7D%7D">{{ pub.title }}</a></span><span class="s1"> <br>
-{% if pub.coauthors != "" %} (with {{ pub.coauthors }})<br>
-{% endif %} {% if pub.preprint == "no" %} <i>{{ pub.publication }}</i>, {{ pub.year }} {% else %} Preprint, {{ pub.year }} {% endif %}<span class="Apple-converted-space"> </span></span></li>
+---
+layout: page
+navtitle: Research
+permalink: research/
+---
+
+<link rel="stylesheet" href="../css/main.css">
+
+<p>My research interests lie primarily in geometric group theory,
+combinatorics, and topology, with a particular interest in the braid group and
+its relatives. Some of my recent work has focused on the geometric and
+combinatorial connections between braids, complex polynomials, and noncrossing
+partitions. My other interests include Coxeter groups, Artin groups, mapping
+class groups, and configuration spaces.<p>
+
+<h2>Publications and Preprints</h2>
+{% assign publications = site.publications | where:"inprep","no" | sort: "year" | reverse %}
+
+<ol reversed>
+  {% for pub in publications %}
+  <li>
+    <a href="{{ pub.pdf }}">{{ pub.title }}</a> <br>
+    {% if pub.coauthors != "" %}
+      <div class="pubauthors">(with {{ pub.coauthors }})</div>
+    {% endif %}
+    <div class="pubinfo"> 
+        {% if pub.preprint == "no" %}
+            <i>{{ pub.publication }}</i>, {{ pub.year }}
+        {% else %}
+            Preprint, {{ pub.year }}
+        {% endif %}
+    </div>
+  </li>
+  {% endfor %}
 </ol>
-<p class="p1"><span class="s1">{% endfor %}</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>In Preparation</b></span></h2>
-<p class="p1"><span class="s1">{% assign publications = site.publications | where:"inprep","yes" %}</span></p>
-<p class="p1"><span class="s1">{% for pub in publications %}</span></p>
-<ul class="ul1">
-  <li class="li1"><span class="s1">{{ pub.title }} <br>
-{% if pub.coauthors != "" %} (with {{ pub.coauthors }})<br>
-{% endif %} <i>{{ pub.publication }}</i></span></li>
+
+<h2>In Preparation</h2>
+{% assign publications = site.publications | where:"inprep","yes" %}
+
+<ul reversed>
+  {% for pub in publications %}
+  <li>
+    {{ pub.title }} <br>
+    {% if pub.coauthors != "" %}
+      <div class="pubauthors">(with {{ pub.coauthors }})</div>
+    {% endif %}
+    <div class="pubinfo"> <i>{{ pub.publication }}</i></div>
+  </li>
+  {% endfor %}
 </ul>
-<p class="p1"><span class="s1">{% endfor %}</span></p>
-</body>
-</html>
