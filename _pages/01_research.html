@@ -17,23 +17,7 @@ class groups, and configuration spaces.<p>
 {% assign publications = site.publications | where:"inprep","no" | sort: "year" | reverse %}
 
 <ol reversed>
-  {% for pub in publications | where:"preprint","yes" %}
-  <li>
-    <a href="{{ pub.pdf }}">{{ pub.title }}</a> <br>
-    {% if pub.coauthors != "" %}
-      <div class="pubauthors">(with {{ pub.coauthors }})</div>
-    {% endif %}
-    <div class="pubinfo"> 
-        {% if pub.preprint == "no" %}
-            <i>{{ pub.publication }}</i>, {{ pub.year }}
-        {% else %}
-            Preprint, {{ pub.year }}
-        {% endif %}
-    </div>
-  </li>
-  {% endfor %}
-  
-  {% for pub in publications | where:"preprint","no" %}
+  {% for pub in publications %}
   <li>
     <a href="{{ pub.pdf }}">{{ pub.title }}</a> <br>
     {% if pub.coauthors != "" %}
