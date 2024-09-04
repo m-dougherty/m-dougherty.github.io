@@ -6,7 +6,7 @@ coauthors: "Jon McCammond"
 inprep: "no"
 preprint: "yes"
 publication: ""
-year: ""
+year: "2024"
 doi: ""
 pdf: "gcp2-polynomials-and-cell-structures.pdf"
 ---
