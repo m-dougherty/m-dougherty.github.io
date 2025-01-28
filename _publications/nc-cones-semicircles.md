@@ -6,7 +6,7 @@ coauthors: "Kaiyi Fang, Yunting Jiang, Edgar Lin, Lucas Lindenmuth, Eleanor Pokr
 inprep: "no"
 preprint: "yes"
 publication: 
-year: 
+year: 2025
 doi: 
 pdf: "nc-cones-semicircles.pdf"
 ---
