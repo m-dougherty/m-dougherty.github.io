@@ -5,8 +5,8 @@ authors: "Michael Dougherty, Kaiyi Fang, Yunting Jiang, Edgar Lin, Lucas Lindenm
 coauthors: "Kaiyi Fang, Yunting Jiang, Edgar Lin, Lucas Lindenmuth, Eleanor Pokras, and Gina Root"
 inprep: "no"
 preprint: "yes"
-publication: 
-year: 2025
-doi: 
+publication: "Preprint"
+year: "2025"
+doi: ""
 pdf: "nc-cones-semicircles.pdf"
 ---
