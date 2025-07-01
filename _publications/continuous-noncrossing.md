@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Continuous Noncrossing Partitions and the Dual Braid Complex"
+title: "Continuous Noncrossing Partitions and Weighted Circular Factorizations"
 authors: "Michael Dougherty and Jon McCammond"
 coauthors: "Jon McCammond"
 inprep: "no"
