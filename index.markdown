@@ -16,8 +16,9 @@ I am an Assistant Professor in the Department of Mathematics
 at Lafayette College in Easton, PA.
 
 My research areas include geometric group theory,
-combinatorics, and topology, and I am especially interested in the braid
-group and its many appearances throughout mathematics.
+combinatorics, and topology, and I am especially interested in Artin groups and
+their many appearances throughout mathematics. My work is currently supported by
+NSF grant DMS-2532608.
 
 I believe in [Federico Ardila](http://math.sfsu.edu/federico/)'s axioms from
 [Todos Cuentan: Cultivating Diversity in Combinatorics](https://www.ams.org/publications/journals/notices/201610/rnoti-p1164.pdf):
